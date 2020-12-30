@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product list</title>
+    <link rel="stylesheet" href="css/productlist.css">
+    
+    <link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-1">
+                <img src="images/baglogo.jpeg" height="60px" width="60px">
+
+            </div>
+            <div class="logo-name">
+                <h2>Shopping Online</h2>
+            </div>
+
+            <div class="header-2">
+
+
+
+                <ul>
+
+
+                    
+
+                    <i class="fa fa-sign-out" aria-hidden="true"></i><li><a href="">LOGOUT</a></li>
+                    <a href="admin.html"><img src="images/admin.jpeg" width="50px" height="50px"></a>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+   <!--small-container-->
+   <div class="small-container">
+    <div class="class-1">
+
+        <ul>
+           <li><i class="fa fa-home" aria-hidden="true">&nbsp;Dashboard</i></li>
+            
+            <button class="dropdown-btn" style="font-size: 16px;">Product list 
+               &nbsp;&nbsp; <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="productlist.html">All products</a>
+                <a href="addproduct.html">Add product</a>  
+              </div>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Order list</a></li>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Customer list</a></li>
+        </ul>
+    </div>
+        <!--productlist-->
+
+        <div class="class-2">
+
+            <div class="p-header">
+                <div class="p-class-1">
+                    <h3>Product list</h3>
+                    <div class="p-btn">
+                        <button><a href="admin.html">Back</a></button>
+                    </div>
+                </div>
+               
+                <div class="p-class-2">
+                    <form action="">
+                        
+                            <legend>Enter your Search criteria:</legend> <br>
+                            <label for="Product Coded">Product Code:</label>
+                            <input type="text" id="Product Code">
+                            <label for="category">Category:</label>
+                            <input type="text" id="category"><br><br>
+                            <label for="category">Manufacturer:</label>
+                            <input type="text" id="category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="button" class="p1-btn" value="search">
+                            <a href="addproduct.html"> <input type="button" class="p1-btn" value="Add new product"></a>
+                       
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="p-class-3">
+                <table id="customers">
+                    <tr>
+                        <th>Product name</th>
+                        <th>Product code</th>
+                        <th>Price</th>
+                        <th>Last updated</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Printed T-shirt</td>
+                        <td>1001</td>
+                        <td>$40.00</td>
+                        <td>24/11/2020 13:56:00 </td>
+                        <td>Active <i class="fa fa-pencil" aria-hidden="true"></i><a href="editproduct.html"><input
+                                    type="button" class="edit" value="edit"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Printed T-shirt</td>
+                        <td>1002</td>
+                        <td>$60.00</td>
+                        <td>24/11/2020 13:56:00 </td>
+                        <td>Active <i class="fa fa-pencil" aria-hidden="true"></i><input type="button" class="edit"
+                                value="edit"></td>
+                    </tr>
+                    <tr>
+                        <td>Printed T-shirt</td>
+                        <td>1003</td>
+                        <td>$40.00</td>
+                        <td>24/11/2020 13:56:00 </td>
+                        <td>Active <i class="fa fa-pencil" aria-hidden="true"></i><input type="button" class="edit"
+                                value="edit"></td>
+                    </tr>
+                    <tr>
+                        <td>Printed T-shirt</td>
+                        <td>1004</td>
+                        <td>$40.00</td>
+                        <td>24/11/2020 13:56:00 </td>
+                        <td>Active <i class="fa fa-pencil" aria-hidden="true"></i><input type="button" class="edit"
+                                value="edit"></td>
+                    </tr>
+                    <tr>
+                        <td>T-shirt</td>
+                        <td>1005</td>
+                        <td>$40.00</td>
+                        <td>24/11/2020 13:56:00 </td>
+                        <td>Active <i class="fa fa-pencil" aria-hidden="true"></i><input type="button" class="edit"
+                                value="edit"></td>
+                    </tr>
+
+
+                </table><br>
+                <div class="page-btn">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>&#8594</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+    <div class="footer">
+        &#169;Copyrights 2020-shopping online
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orderlist Page</title>
+    <link rel="stylesheet" href="css/orderslist.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-1">
+                <img src="images/baglogo.jpeg" height="60px" width="60px">
+                
+            </div>
+            <div class="logo-name">
+                <h2>Shopping Online</h2>
+            </div>
+
+            <div class="header-2">
+
+
+
+                <ul >
+
+
+                    
+
+                    <i class="fa fa-sign-out" aria-hidden="true"></i><li><a href="">LOGOUT</a></li>
+                    <a href="admin.html"><img src="images/admin.jpeg" width="50px" height="50px"></a>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+     <!--small-container-->
+   <div class="small-container">
+    <div class="class-1">
+
+        <ul>
+           <li><i class="fa fa-home" aria-hidden="true">&nbsp;Dashboard</i></li>
+            
+            <button class="dropdown-btn" style="font-size: 16px;">Product list 
+               &nbsp;&nbsp; <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="productlist.html">All products</a>
+                <a href="addproduct.html">Add product</a>  
+              </div>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Order list</a></li>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Customer list</a></li>
+        </ul>
+    </div>
+        <!--orderlist-->
+        <div class="class-2">
+            <div class="p-header">
+                <div class="p-class-1">
+                    <h3>Orders list</h3>
+                    
+                </div>
+                <div class="p-class-2">
+                    <form action="">
+                       
+                            <legend>Enter your Search criteria:</legend> <br>
+                            <label for="from">From:</label>
+                            <input type="date" id="from" name="trip-start" min="2019-01-01" max=date()>
+                            <label for="To">To:</label>
+                            <input type="date" id="from" name="trip-start" min="2019-01-01" max=""><br><br>
+                            <label for="No_more_than">No more than:</label>
+                            <select name="" id="No_more_than">
+                                <option value=""> select</option>
+                                <option value=""> 5</option>
+                                <option value=""> 10</option>
+                                <option value=""> 15</option>
+                                <option value=""> 20</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="button" class="p1-btn" value="Get orders">
+        
+                        
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="p-class-3">
+                <table id="customers">
+                    <tr>
+                        <th>Order id</th>
+                        <th>Customer name</th>
+                        <th>Date</th>
+                        <th>Email address</th>
+        
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td> 2020101 </td>
+                        <td>Som</td>
+                        <td>2020-11-24 13:52:22</td>
+                        <td>som@xyz.com</td>
+                        <td><a href="orderdetail.html"><input type="button" value="Order Details" class="orderdetails"></a></td>
+                    </tr>
+                    <tr>
+                        <td> 2020102 </td>
+                        <td>Tom</td>
+                        <td>2020-11-24 14:25:33</td>
+                        <td>Tom@xyz.com</td>
+                        <td><input type="button" value="Order Details" class="orderdetails"></td>
+                    </tr>
+        
+                    <tr>
+                        <td> 2020103 </td>
+                        <td>Jim</td>
+                        <td>2020-11-25  23:22:11</td>
+                        <td>Jim@xyz.com</td>
+                        <td><input type="button" value="Order Details"class="orderdetails"></td>
+                    </tr>
+        
+                    <tr>
+                        <td> 2020104 </td>
+                        <td>Yom</td>
+                        <td>2020-11-24 22:00:00</td>
+                        <td>som@xyz.com</td>
+                        <td><input type="button" value="Order Details"class="orderdetails"></td>
+                    </tr>
+        
+                    <tr>
+                        <td> 2020105 </td>
+                        <td>REom</td>
+                        <td>2020-11-27 11:12:56</td>
+                        <td>REom@xyz.com</td>
+                        <td><input type="button" value="Order Details"class="orderdetails"></td>
+                    </tr>
+        
+        
+        
+                </table><br>
+                <div class="page-btn">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>&#8594</span>
+                </div>
+        
+        
+            </div><br><br><br><br><br>
+        </div>
+    </div>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+    <div class="footer">
+        &#169;Copyrights 2020-shopping online
+    </div>
+
+
+</body>
+
+</html>

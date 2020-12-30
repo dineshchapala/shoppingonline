@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderdetailPage</title>
+    <link rel="stylesheet" href="css/orderslist.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-1">
+                <img src="images/baglogo.jpeg" height="60px" width="60px">
+                
+            </div>
+            <div class="logo-name">
+                <h2>Shopping Online</h2>
+            </div>
+
+            <div class="header-2">
+
+
+
+                <ul >
+                    <i class="fa fa-sign-out" aria-hidden="true"></i><li><a href="">LOGOUT</a></li>
+                    <a href="admin.html"><img src="images/admin.jpeg" width="50px" height="50px"></a>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+     <!--small-container-->
+   <div class="small-container">
+    <div class="class-1">
+
+        <ul>
+           <li><i class="fa fa-home" aria-hidden="true">&nbsp;Dashboard</i></li>
+            
+            <button class="dropdown-btn" style="font-size: 16px;">Product list 
+               &nbsp;&nbsp; <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="productlist.html">All products</a>
+                <a href="addproduct.html">Add product</a>  
+              </div>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Order list</a></li>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Customer list</a></li>
+        </ul>
+    </div>
+        <!--orderdetails-->
+        <div class="class-2">
+            <div class="small-container">
+                <input type="button" value="Update" class="update">
+                <input type="button" value="Print" class="print">
+            </div>
+        
+          &nbsp;  <h3>Order Information</h3>
+            <div class="content">
+               
+                <div class="col1">
+                    <table>
+                        <tr>
+                            <td>Customer name:</td>
+                            <td>John</td>
+                        </tr>
+                        <tr>
+                            <td>Order Id:</td>
+                            <td>2020101</td>
+                        </tr>
+                        <tr>
+                            <td> Email address:</td>
+                            <td>Thon@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>8-99-564 State road, india</td>
+                        </tr>
+                        <tr>
+                            <td>Contact number:</td>
+                            <td>95697146254</td>
+                        </tr>
+                        <tr>
+                            <td>Product ID:</td>
+                            <td>10061</td>
+                        </tr>
+                        <tr>
+                            <td>Product name:</td>
+                            <td>Red t-shirt</td>
+                        </tr>
+                        <tr>
+                            <td>order place date and time:</td>
+                            <td>2020-02-02</td>
+                        </tr>
+                        <tr>
+                            <td>Price:</td>
+                            <td>$50.00</td>
+                        </tr>
+                        <tr>
+                            <td><label for="payment">Payment:</label></td>
+                            <td>Credit card</td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <div class="col2">
+        
+                    <table>
+                        <tr>
+                            <td>Order status:</td>
+                            <td> <select>
+                                    <option value="pending">Pending</option>
+                                    <option>Delivered</option>
+                                    <option>On hold</option>
+                                </select>
+        
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col3">
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th >Shipping Address</th>
+                            <th>Package</th>
+                            
+                                <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th>customer name</th>
+                        </tr>
+                        <tr>
+                            <td>shirt</td>
+                            <td >5-229,state road, mumbai,india</td>
+                            <td>shirt</td>
+                            <td> <input type="number" value="1"> </td>
+                            <td>$60.0</td>
+                            <td>abhi</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+    <div class="footer">
+        &#169;Copyrights 2020-shopping online
+    </div>
+
+
+</body>
+
+</html>

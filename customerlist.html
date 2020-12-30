@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer list</title>
+    <link rel="stylesheet" href="css/customerlist.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-1">
+                <img src="images/baglogo.jpeg" height="60px" width="60px">
+                
+            </div>
+            <div class="logo-name">
+                <h2>Shopping Online</h2>
+            </div>
+
+            <div class="header-2">
+              <ul >
+
+                <i class="fa fa-sign-out" aria-hidden="true"></i>  <li><a href="">LOGOUT</a></li>
+                    <a href="admin.html"><img src="images/admin.jpeg" width="50px" height="50px"></a>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--small-container-->
+   <div class="small-container">
+    <div class="class-1">
+
+        <ul>
+           <li><i class="fa fa-home" aria-hidden="true">&nbsp;Dashboard</i></li>
+            
+            <button class="dropdown-btn" style="font-size: 16px;">Product list 
+               &nbsp;&nbsp; <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="productlist.html">All products</a>
+                <a href="addproduct.html">Add product</a>  
+              </div>
+              <li style="font-size: 15px;">  <a href="orderlist.html">Order list</a></li>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Customer list</a></li>
+        </ul>
+    </div>
+        <!--customerlist-->
+        <div class="class-2">
+            <div class="head">
+                <div class="header1">
+                    <h3>Customer list</h> <br>
+                </div>
+                <div class="header2">
+                    <form action="">
+                        <table>
+                       <tr> <td> Enter your Search criteria:</legend></td></tr>
+                        <td><label for="lastname">Last name:</label></td>
+                        <td><input type="text" class="lastname"></td> </tr>
+                      <tr> <td><label for="mail" id="mail" >E-mail:</label></td>
+                        <td><input type="text" class="mail"></td></tr> 
+                      <tr> <td><input type="button" class="search" value="Search"></td></tr> 
+    
+                    </table>
+                    
+                </form>
+                </div>
+            </div>
+            <div class="header3">
+                <table>
+                    <tr>
+                        <th> Customer name </th>
+                        <th> email address</th>
+                        <th> Phone number </th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>John123@gmail.com</td>
+                        <td>96254525</td>
+                        <td><a href="customerdetails.html"><input type="button" value="details" class="customerdetails"></a></td>
+                    </tr>
+                    <tr>
+                        <td>harry</td>
+                        <td>John123@gmail.com</td>
+                        <td>95624523</td>
+                        <td><a href="customerdetails.html"><input type="button" value="details" class="customerdetails"></a></td>
+                    </tr>
+                    <tr>
+                        <td>sam</td>
+                        <td>John123@gmail.com</td>
+                        <td>95624523</td>
+                        <td><a href="customerdetails.html"><input type="button" value="details" class="customerdetails"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+    <div class="footer">
+        &#169;Copyrights 2020-shopping online
+    </div>
+
+
+</body>
+</html>

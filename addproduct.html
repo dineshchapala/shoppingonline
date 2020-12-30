@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product</title>
+    <link rel="stylesheet" href="css/add_edit.css">
+    <link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-1">
+                <img src="images/baglogo.jpeg" height="60px" width="60px">
+
+            </div>
+            <div class="logo-name">
+                <h2>Shopping Online</h2>
+            </div>
+
+            <div class="header-2">
+                <ul>
+
+                    <i class="fa fa-sign-out" aria-hidden="true"></i><li><a href="">LOGOUT</a></li>
+                    <a href="admin.html"><img src="images/admin.jpeg" width="50px" height="50px"></a>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+   <!--small-container-->
+   <div class="small-container">
+    <div class="class-1">
+
+        <ul>
+           <li><i class="fa fa-home" aria-hidden="true">&nbsp;Dashboard</i></li>
+            
+            <button class="dropdown-btn" style="font-size: 16px;">Product list 
+               &nbsp;&nbsp; <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="productlist.html">All products</a>
+                <a href="addproduct.html">Add product</a>  
+              </div>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Order list</a></li>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Customer list</a></li>
+        </ul>
+    </div>
+        <!--addproductlist-->
+
+        <div class="class-2">
+            <div class="smallcontainer">
+                <form action="">
+                    <input type="submit" value="submit" class="submit">
+                 <button class="clear"> clear</button> 
+                </form>
+            </div>
+            <h3>Product Information</h3>
+            <div class="carousel">
+                <div class="form1">
+                    <form>
+                        <table>
+                            <tr>
+                                <td><label for="Productname">Product name:</label></td>
+                                <td> <input type="text" id="Productname"  class="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Productcode">Product code:</label></td>
+                                <td> <input type="text" id="Productcode"   class="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Productcategory">Product category:</label></td>
+                                <td> <input type="text" id="Productcategory" class="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Manufacturer">Manufacturer:</label></td>
+                                <td> <input type="text" id="Manufacturer" class="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Weight">Weight:</label></td>
+                                <td> <input type="text" id="Weight" class="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Price">Price:</label></td>
+                                <td> <input type="text" id="Price"   class="text"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Options</td>
+                                <td>
+                                    <select name="colour" id="">
+                                        <option value="">colour</option>
+                                        <option value="">red</option>
+                                        <option value="">blue</option>
+                                    </select> <br>
+                                    <input type="checkbox"><small>XXL</small> 
+                                    <input type="checkbox"><small>XL</small>
+                                    <input type="checkbox"><small>L</small>
+                                    <br><input type="checkbox"><small>M</small>
+                                    <input type="checkbox"><small>S</small>
+                                    <input type="checkbox"><small>XS</small> 
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> <small>Waist sze:</small> <br>
+                                    <input type="checkbox"><small>28</small> 
+                                    <input type="checkbox"><small>30</small>
+                                    <input type="checkbox"><small>32</small>
+                                    <br><input type="checkbox"><small>34</small>
+                                    <input type="checkbox"><small>36</small>
+                                    <input type="checkbox"><small>38</small> 
+                                    
+                                </td>
+                                </td>
+                            </tr>
+                           
+        
+        
+                        </table>
+        
+                    </form>
+        
+                </div>
+                <div class="image">
+                    <table class="form2">
+                        <tr> 
+                            <td>
+                                <label for="file">Product image:</label>
+                            </td>
+                            <td>
+                                <i class="fa fa-folder-open-o" aria-hidden="true"> &nbsp; </i ><input type="file" id="file">
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    
+                </div>
+                <div class="product-description">
+                    Product description:
+                    <textarea name="editor1"></textarea>
+                        <script>
+                                CKEDITOR.replace( 'editor1' );
+                        </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    /* editor*/
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script>
+   
+
+
+</body>
+
+</html>

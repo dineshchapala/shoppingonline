@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer details</title>
+    <link rel="stylesheet" href="css/customerlist.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-1">
+                <img src="images/baglogo.jpeg" height="60px" width="60px">
+
+            </div>
+            <div class="logo-name">
+                <h2>Shopping Online</h2>
+            </div>
+
+            <div class="header-2">
+                <ul>
+
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <li><a href="">LOGOUT</a></li>
+                    <a href="admin.html"><img src="images/admin.jpeg" width="50px" height="50px"></a>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!--small-container-->
+<div class="small-container">
+    <div class="class-1">
+
+        <ul>
+           <li><i class="fa fa-home" aria-hidden="true">&nbsp;Dashboard</i></li>
+            
+            <button class="dropdown-btn" style="font-size: 16px;">Product list 
+               &nbsp;&nbsp; <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="productlist.html">All products</a>
+                <a href="addproduct.html">Add product</a>  
+              </div>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Order list</a></li>
+              <li style="font-size: 15px;">  <a href="customerlist.html">Customer list</a></li>
+        </ul>
+    </div>
+        <!--customerdetails-->
+        <div class="class-2">
+            <div class="content1">
+                <h3>Customer details</h3>
+            </div>
+            <div class="content2">
+                <div>
+                    <p style="padding-left: 10px; font-size: 18px;">customer information</p>
+                    <input type="button" value="update" class="update">
+                    <input type="button" value=clear class="clear">
+                </div>
+                <div class="col1">
+
+
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td> <label for="customer_id:">Customer Id:</label></td>
+                                <td><input type="text" id="customer_id" value="J12"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="customer_fname">First name:</label></td>
+                                <td><input type="text" id="customer_fname" value="John"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="customer_lname">Last name</label></td>
+                                <td><input type="text" id="customer_lname" value=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email_address">Email Address:</label></td>
+                                <td> <input type="text" id="email_address" value="dwaynejohn@gmail.com">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone_number">Phone number:</label></td>
+                                <td> <input type="text" id="phone_number" value="964526315">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone_number">Alternate number:</label></td>
+                                <td> <input type="text" id="" value="964526315">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="username">username:</label></td>
+                                <td><input type="text" id="username"></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="pasword">password:</label></td>
+                                <td><input type="text" id="password" value="Jdwayne_12"></td>
+                            </tr>
+
+                        </table>
+                    </form>
+                </div>
+                <div class="col2">
+                    <b>Delivery information: </b>
+                    <table>
+                        <tr>
+                            <td> <label for="Addres1">Address 1:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="Addres2">Address 2:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="city">City:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="pincode">pincode:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="country">country:</label></td>
+                            <td><input type="text" id="country"> </td>
+                        </tr>
+                        
+                    </table>
+                    </b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+    <div class="footer">
+        &#169;Copyrights 2020-shopping online
+    </div>
+
+
+</body>
+
+</html>

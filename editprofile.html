@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/men.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Edit Profile</title>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+
+    nav ul input {
+        display: inline;
+        border-radius: 10px;
+        border-color: #fff;
+    }
+
+    nav ul i {
+        padding-right: 7px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    nav {
+        flex: 1;
+        text-align: center;
+        position: relative;
+
+    }
+
+    .search {
+        border: 1px solid black;
+    }
+
+    nav>ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav ul li:hover .dropdown {
+        display: block;
+
+    }
+
+    nav ul li>a:hover {
+        background: rgb(206, 194, 194);
+        transition: .5s;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        text-align: left;
+        background-color: #fff;
+
+
+    }
+
+    .dropdown ul li {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    p {
+        color: #555;
+    }
+
+    /**orderpage-courosel*****/
+    .carousel {
+
+        margin: 3% 25%;
+
+    }
+
+    .c-class1 {
+        display: inline-block;
+        padding: 10px 10px;
+        border-right: 1px solid rgb(175, 171, 171);
+    }
+
+    .c-class2 {
+        padding-left: 10%;
+        position: absolute;
+        display: inline-block;
+        
+        padding-top: 10px;
+    }
+    .c-class2 table td{
+        height:40px;
+        color: rgb(70, 67, 67);
+        column-width: 200px;
+        
+    }
+    .save{
+        padding:9px 80px;
+        border:none;
+        background:#FF3F6C;
+        outline: none;
+
+    }
+    .save p{
+        color: white;
+        font-weight: 400;
+        font-size: medium;
+    }
+    .c-form{
+        padding: 5px 0px;
+    }
+    .c{
+        padding:8px 155px 8px 8px;
+        display: block;
+    }
+    .c input{
+        font-size: 30px;
+        padding-top:10px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/baglogo.jpeg" width="120px">
+            </div>
+            <nav>
+
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a class="active" href="">PRODUCTS</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li> <a href="men.html">MEN</a></li>
+                                <li> <a href="women.html">WOMEN</a> </li>
+                                <li> <a href="kids.html">KIDS</a> </li>
+                                <li> <a href="kids.html">ACCESSORIES</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="active" href="aboutus.html">ABOUT</a></li>
+                    <li><a href="#contactus">CONTACT</a></li>
+                    <li><a href="">PROFILE</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li> <a href="loginpage.html">LOGIN</a></li>
+                                <li> <a href="signup.html">SIGN UP</a> </li>
+                                <li> <a href="order.html">ORDERS</a></li>
+                                <li> <a href="#">EDIT PROFILE</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div>
+            Account <h5>name</h6>
+        </div>
+        <hr>
+
+        <div class="c-class1">
+
+            <ul>
+                Overeview
+                <hr>
+                <li>ORDERS <a href="order.html">
+                        <P>Orders & Returns</P>
+                    </a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li>Account</li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="">Saved cards</a></li>
+                <li><a href="">Address</a></li>
+            </ul>
+
+
+        </div>
+        <div class="c-class2">
+            
+            <form action="">
+                <b>Edit profile</b> <hr> <br>
+               <input type="text" placeholder="full name" class="c" value="Dinesh"><br>
+                <input type="text" placeholder="email address" class="c" ><br>
+                <input type="text" placeholder="phone number" class="c" value="958462136"><br>
+                <input type="text" placeholder="ddmmyyyy" class="c"><br>
+                <input type="text" placeholder="alternate number" class="c"><br>
+                <button class="save"><a href=""><p>Save details</p></a></button> 
+            </form>
+            
+
+        </div>
+    </div>
+</body>
+
+</html>
