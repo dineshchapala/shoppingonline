@@ -1,0 +1,145 @@
+
+ 
+ /*----------*/      
+
+                .form-box 
+                {
+                    width: 350px;
+                    height: 450px;
+                    position: relative;
+                    margin: 4% auto;
+                    background:rgb(240, 216, 216);
+                    padding: 5px ;
+                    box-shadow: rgb(197, 197, 197) 5px 0px 5px 5px;
+                }
+                .form h1{
+                    display:inline-block;
+                }
+                .button-box 
+                {
+                    width: 200px; 
+                    margin: 35px auto;
+                    padding-left:50px;      
+                    border-radius: 30px;
+                    
+                }
+
+                
+                
+                .input-group{
+                    top:100px;
+                    position: absolute;
+                    width:280px;
+                    padding-left: 20px;
+                    transition: .5s;
+                }
+                .form-box a{
+                    color: blue;
+                    
+                }
+                input[type=text], input[type=password] {
+                    width: 100%;
+                    padding: 10px;
+                    margin: 5px 0 20px 0;
+                    border: none;
+                    background: #f1f1f1;
+                  }
+                  
+                  input[type=text]:focus, input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                  }
+                  
+              .submit-btn
+              {
+                  color: rgb(0, 0, 0);
+                  background-color:#9799c2;
+                  width:50%;
+                  
+                  border:none;
+                 padding:10px 7px;
+                 padding-right:10px;
+              }
+           
+              .submit-btn:hover{
+                  background-color:#a2a4c5;
+              }
+              
+              a{
+                  
+               
+                   
+                  padding-top:40px 0px;
+              }
+              .checkbox{
+                  padding:40px 10px;
+              }
+   /****footer****/ 
+   .row{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}   
+   .footer{
+    background: #000;
+    color:#8a8a8a;
+    font-size:14px;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:10px;
+    
+}
+.footer p{
+    color:#8a8a8a;   
+}
+.footer h3{
+    color:#8a8a8a;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3 ,.footer-col-4{
+min-width: 250px;
+margin-bottom: 20px;
+}
+.footer-col-1
+{
+    flex-basis: 25%;
+    text-align:center;
+}
+.footer-col-2
+{
+    flex:1;
+    text-align:center;
+}
+.footer-col-2 img
+{
+   width:180px;
+   margin-bottom:20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 25%;
+    text-align:center;
+}
+ul{
+    list-style-type: none;
+
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+
+}
+.copy-rights{
+    text-align: center;
+    padding-top: 20px ;
+    
+}
+
+
+ 
+   
+ 

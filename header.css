@@ -1,0 +1,99 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#fff;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.logo{
+    box-shadow: 5px 5px 0px 0px rgba(202, 195, 195, 0.2);
+}
+
+.search{
+    margin:0px;
+    background-color: rgb(249, 253, 253);
+   
+    width: 250px;
+    padding:3px 10px;
+    border-radius: 10px ;
+    border:0.2px solid rgb(219, 167, 167);
+    outline: none; 
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-out;
+}
+.search:focus{
+    border:2px solid rgb(255, 255, 255);
+
+}
+nav ul input{
+    display: inline;
+    border-radius: 10px;
+    border-color: #fff;
+}
+nav ul i{
+    padding-right: 7px;
+}
+.navbar{
+   
+  
+    position: sticky;
+    top: 0;
+    padding:0px 20px;
+    background:#ffffff;
+    display:flex;
+    align-items:center;
+   
+}
+nav{
+    flex:1;
+    text-align:center;
+    position: relative;
+}
+nav >ul{
+    display:inline-block;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    list-style-type:none;
+   
+}
+nav ul li:hover .dropdown{
+   
+    display: block;
+    text-align:left;
+
+}
+
+
+nav ul li>a:hover{
+   color:rgb(224, 187, 187);
+    transition: 0.25s;
+}
+.dropdown{
+    width:150px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: rgb(235, 230, 230);
+    display: none;
+    position: absolute;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0px 10px 10px 0px rgba(27, 26, 26, 0.2);   
+}
+.dropdown ul li{
+    display: block;
+    
+}
+a{
+    text-decoration: none;
+    color:#555;
+}
+
+p{
+    color:#555;
+
+}

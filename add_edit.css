@@ -1,0 +1,191 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.header{
+    background-color:  rgb(221, 217, 217);
+}
+.container{
+    padding:20px 35px;
+
+}
+.header-1{
+    display: inline-block;
+    padding-right: 20px;
+  
+}
+
+.logo-name {
+    display: inline-block;
+   
+    padding-left: 150px;
+    
+}
+.logo-name h2{
+    
+    font-weight: 600;
+}
+.header-2{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.header-2{
+    float: right;
+}
+.container >ul{
+    text-align:right;
+    list-style-type:none;
+}
+
+ul li{
+    margin-bottom: 1px solid black;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+.container ul li >a{
+    text-decoration: none;
+    color: black;
+}
+/****dropdown****/
+.class-1 button{
+    margin: 22px;
+}
+.dropdown-container{
+    
+    display: none;
+    padding-left: 24px;
+    
+}
+.dropdown-container a{
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    border:1px solid  rgb(221, 217, 217);
+    color: black;
+}
+.dropdown-container a:hover{
+    background-color: rgb(245, 245, 200);
+}
+.dropdown-btn{
+    background-color: rgb(221, 217, 217);
+    border:none;
+    outline:none;
+}
+
+/***/
+/****small container*******/
+.small-container{
+    display:flex;
+    
+    width: auto;
+   
+    
+}
+.class-1{
+     flex-basis: 10%;
+    height:450px;
+    text-align:left;
+    font-size: 18px;
+    background-color: rgb(221, 217, 217);
+    position: static;
+    
+}
+.class-1 li{
+padding: 35px 20px;
+}
+.class-1 li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.class-2{
+    
+    height:600px;
+    flex-basis: 90%;  
+}
+/******editdetails******/
+
+h3{
+    display: inline-block;    
+    padding-left: 40px;;
+}
+.btn{
+      
+    float: right;
+    padding-left: 30px;;
+}
+.smallcontainer{
+    padding:5px 29px;
+}
+
+.update{
+    color: green;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding:2px 5px;
+    border: 1px solid black;
+  outline: none;
+} 
+.archive{
+  
+    border-radius: 10px;
+   padding:2px 5px;
+   border: 1px solid black;
+   outline: none;
+}
+.delete{
+    color: red;
+    border-radius: 10px;
+    padding:2px 5px;
+   
+    border: 1px solid black;
+    outline: none;
+}
+.carousel{
+    padding-left: 50px;
+}
+.form1{
+    padding: 15px 15px;;
+    display: inline-block;
+    border: 1px solid rgb(143, 136, 136);
+}
+.image{
+    vertical-align: top ;
+    display: inline-block;
+}
+
+table td{
+    padding: 5px ;
+   
+}
+/***add product***/
+.submit{
+    margin: 5px 5px;
+    border-radius: 10px;
+    padding:1px 6px;
+    border: 1px solid salmon;
+    outline: none; 
+    cursor: pointer;
+}
+.clear{
+    border-radius: 10px;
+    padding:1px 5px;
+    border: 1px solid salmon;
+    outline: none;
+    cursor: pointer;
+}
+#file{
+    margin: 5px 5px;
+    
+    padding:1px 6px;
+    
+  
+}
