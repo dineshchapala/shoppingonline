@@ -1,2 +1,2 @@
 # shoppingonline
-project on online online
+project on ecommerce 
